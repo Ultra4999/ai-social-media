@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Social Media Manager</title>
+<link rel="stylesheet" href="style.css"></head>
+<body>
+<header><h1>AI Social Media Manager</h1><span id="mode" class="pill"></span></header>
+<main>
+  <nav id="tabs" aria-label="Platform"></nav>
+  <section class="card">
+    <label>Topic <input id="topic" maxlength="500" placeholder="e.g. launching our new web development course"></label>
+    <div class="row">
+      <label>Tone <select id="tone"><option>professional</option><option>friendly</option><option>playful</option><option>inspirational</option></select></label>
+      <label class="grow">Brand voice (optional) <input id="voice" maxlength="300" placeholder="e.g. clear, warm, no jargon"></label>
+    </div>
+    <button id="gen">Generate draft</button>
+    <label>Draft <textarea id="draft" rows="8"></textarea></label>
+    <div class="meta"><span id="count">0</span><span id="note"></span></div>
+    <label id="imgwrap" hidden>Image URL (required for Instagram) <input id="img" type="url"></label>
+    <button id="pub" class="secondary">Publish</button>
+    <p id="status" role="status"></p>
+  </section>
+  <section class="card"><h2>History</h2><ul id="history"></ul></section>
+</main>
+<script src="app.js"></script>
+</body></html>

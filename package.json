@@ -1,0 +1,10 @@
+{
+  "name": "ai-social-media-dashboard",
+  "version": "1.0.0",
+  "description": "AI-assisted social media content dashboard: Node.js and Express backend that proxies the Anthropic API, with separate route modules for Twitter, Instagram, Facebook and LinkedIn.",
+  "main": "server.js",
+  "scripts": { "start": "node --env-file-if-exists=.env server.js", "test": "node test.js" },
+  "engines": { "node": ">=20.6" },
+  "license": "MIT",
+  "dependencies": { "express": "^4.19.2" }
+}
